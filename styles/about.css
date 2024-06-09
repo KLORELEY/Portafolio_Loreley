@@ -1,0 +1,72 @@
+
+#sobre-mi{
+    display:block;
+    background-color:aliceblue;
+    padding: 20px;
+    margin-top: 25px;
+    
+    
+}
+
+
+.about__title{
+    font-weight: bold;
+    font-size: 24px;
+    padding: 15px 0 5px 15px;
+    color:darkgreen;
+}
+
+.about__paragraph{
+    padding-top: 15px;
+}
+
+@media (max-width: 1024px) {
+    #sobre-mi {
+        padding: 15px;
+        margin-top: 20px;
+    }
+
+    .about__title {
+        font-size: 22px;
+        padding: 10px 0 5px 10px;
+    }
+
+    .about__paragraph {
+        padding-top: 10px;
+    }
+}
+
+/* Tablets en modo retrato y teléfonos en modo paisaje */
+@media (max-width: 768px) {
+    #sobre-mi {
+        padding: 10px;
+        margin-top: 15px;
+    }
+
+    .about__title {
+        font-size: 20px;
+        padding: 8px 0 5px 8px;
+    }
+
+    .about__paragraph {
+        padding-top: 8px;
+    }
+}
+
+/* Teléfonos móviles */
+@media (max-width: 480px) {
+    #sobre-mi {
+        padding: 5px;
+        margin-top: 10px;
+    }
+
+    .about__title {
+        font-size: 18px;
+        padding: 5px 0 5px 5px;
+    }
+
+    .about__paragraph {
+        padding-top: 5px;
+        font-size: 14px;
+    }
+}

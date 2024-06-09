@@ -1,0 +1,38 @@
+.footer{
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.footer__rodape{
+    
+    font-size: 18px;
+    padding: 50px 0 5px 15px;
+    color:deeppink;
+    text-align: center;
+
+}
+
+/* Media Queries */
+
+/* Tablets (pantallas medianas) */
+@media (max-width: 768px) {
+    .academic__courses__item__img {
+        flex: 0 1 calc(50% - 20px); /* Dos elementos por fila */
+    }
+
+    .academic__title {
+        font-size: 22px; /* Ajustar tamaño de fuente */
+    }
+}
+
+/* Móviles (pantallas pequeñas) */
+@media (max-width: 480px) {
+    .academic__courses__item__img {
+        flex: 0 1 calc(100% - 20px); /* Un elemento por fila */
+    }
+
+    .academic__title {
+        font-size: 20px; /* Ajustar tamaño de fuente */
+    }
+}

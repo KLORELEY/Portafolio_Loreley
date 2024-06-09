@@ -1,0 +1,74 @@
+.skills__title{
+    font-weight: bold;
+    font-size: 24px;
+    padding: 75px 0 5px 15px;
+    color:blue;
+    text-align: center;
+
+}
+
+.skills__line {
+    display: flex; /* Utiliza flexbox para alinear los elementos horizontalmente */
+    justify-content:space-around; /* Centra los elementos horizontalmente */
+    flex-wrap: wrap;/* Permite que los elementos se ajusten automáticamente a la línea siguiente si no caben en una sola línea */
+   
+}
+
+.skills__box {
+    flex: 0 1 calc(25% - 20xp);
+    margin:10px; /* Añade márgenes horizontales entre los elementos de habilidades */
+    text-align: center; /* Centra el contenido dentro de cada caja de habilidades */
+    padding: 25px;
+    padding-top: 75px;
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    box-sizing: border-box;
+    background-color: aliceblue;
+
+}
+
+.skills__box img {
+    max-width: 50px; /* Define el ancho máximo de las imágenes */
+    max-height: 50px;
+    width: auto;
+    height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción de aspecto */
+}
+
+.skills__name{
+   color: black;
+   font-size: 18px;
+    padding: 20px 0 5px 15px;
+    text-align: center;
+
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .skills__box {
+        flex: 0 1 calc(50% - 20px); /* 2 elementos por fila */
+        height: auto; /* Ajusta la altura automáticamente */
+        width: auto;
+    }
+    
+    .skills__title {
+        font-size: 20px; /* Ajusta el tamaño del título para dispositivos móviles */
+        padding: 30px 0 5px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills__box {
+        flex: 0 1 calc(100% - 20px); /* 1 elemento por fila */
+        height: auto;
+        width: auto;
+    }
+
+    .skills__title {
+        font-size: 18px; /* Ajusta el tamaño del título para pantallas más pequeñas */
+        padding: 20px 0 5px 15px;
+    }
+}

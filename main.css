@@ -1,0 +1,35 @@
+@import url("styles/reset.css");
+@import url("styles/header.css");
+@import url("styles/profile.css");
+@import url("styles/about.css");
+@import url("styles/skills.css");
+@import url("styles/hobbies.css");
+@import url("styles/educacion.css");
+@import url("styles/experiencia.css");
+@import url("styles/contacto.css");
+@import url("styles/footer.css");
+
+
+body{
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color:white;
+    line-height: 1;
+    font-family:"raleway";
+    color:blueviolet;
+    overflow-x:hidden; 
+    
+}
+
+
+main{
+    display:flex;
+    flex-direction: column;
+}
+
+
+
+section {
+    width: 100%;
+    clear: both; 
+}

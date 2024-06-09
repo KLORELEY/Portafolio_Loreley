@@ -1,0 +1,66 @@
+.hobbies__title{
+    font-weight: bold;
+    font-size: 24px;
+    padding: 75px 0 5px 15px;
+    color:blue;
+    text-align: center;
+
+}
+
+
+.hobbies__line{
+    display: flex; /* Utiliza flexbox para alinear los elementos horizontalmente */
+    justify-content:space-around; /* Centra los elementos horizontalmente */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten automáticamente a la línea siguiente si no caben en una sola línea */
+}
+
+.hobbies__box{
+    flex: 0 1 calc(25% - 20xp);
+    margin:10px; /* Añade márgenes horizontales entre los elementos de habilidades */
+    text-align: center; /* Centra el contenido dentro de cada caja de habilidades */
+    padding: 15px 0 5px 15px;
+    
+}
+
+.hobbies__box img {
+    max-width: 100px; /* Define el ancho máximo de las imágenes */
+    max-height:100px;
+    width: auto;
+    height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción de aspecto */
+    background-color:aliceblue;
+    padding: 10px;
+    display: inline-block;
+}
+
+.hobbies__name{
+   
+    font-size: 18px;
+    padding: 20px 0 5px 15px;
+    color:black;
+    text-align: center;
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .hobbies__box {
+        flex: 0 1 calc(50% - 20px); /* 2 elementos por fila */
+        max-width: calc(50% - 20px); /* Asegura que los elementos no excedan el ancho del contenedor */
+    }
+
+    .hobbies__title {
+        font-size: 20px; /* Ajusta el tamaño del título para dispositivos móviles */
+        padding: 50px 0 5px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hobbies__box {
+        flex: 0 1 calc(100% - 20px); /* 1 elemento por fila */
+        max-width: calc(100% - 20px); /* Asegura que los elementos no excedan el ancho del contenedor */
+    }
+
+    .hobbies__title {
+        font-size: 18px; /* Ajusta el tamaño del título para pantallas más pequeñas */
+        padding: 30px 0 5px 15px;
+    }
+}

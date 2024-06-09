@@ -1,0 +1,18 @@
+.experience{
+    display: inline-block;
+    padding:20px;
+    background-color:aliceblue;
+    margin-top: 40px;
+    
+}
+
+
+
+.experience__section__title{
+    text-align: center;
+    font-weight: bold;
+    color:blue;
+    font-size: 24px;
+    padding-top: 5px;
+}
+

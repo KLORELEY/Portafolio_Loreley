@@ -1,0 +1,91 @@
+.title__profile{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    position:relative;
+    float:right;
+    margin-right: 25px;
+ 
+}
+
+.title__bio{
+    font-weight: bold;
+    font-size: 36px;
+    padding-left: 25px;
+    padding-top: 10px;
+    color:blueviolet;
+}
+
+.title__subsection{
+    padding-left:25px;
+    padding-top: 20px;
+    color:blue;
+}
+
+.title__network {
+    display: block;
+    font-size:0;
+    width: 100%;
+    margin:0 auto
+}
+
+
+.title__network__item{
+  display:inline-block;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-content: center;
+  vertical-align: middle;
+  width: 15%;
+  padding: 60px 100px 25px 25px;
+  
+}
+
+.title__network__item{
+  width:100px;
+  transition: transform 0.3s ease;
+  
+}
+
+.title__network__item:hover {
+  transform: scale(1.2);
+
+}
+
+
+.git{
+    width:110px;
+    height:auto;
+}
+
+
+.linkedin{
+    width:100px;
+    height:auto;
+}
+
+
+.instagram{
+    width:70px;
+    height:auto;
+}
+
+
+.cv{
+    width:60px;
+    height:auto;
+}
+
+
+œmedia (max-width:1250px){
+    .title__network{
+      display:block;
+    }
+
+    .git, .linkedin, .instagram, .cv {
+        width: 100%;
+    }
+}
+
