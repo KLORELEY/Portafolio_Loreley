@@ -1,18 +1,74 @@
-.experience{
-    display: inline-block;
-    padding:20px;
-    background-color:aliceblue;
+.experience {
+    display: block;
+    padding: 20px;
+    background-color: aliceblue;
     margin-top: 40px;
-    
 }
 
-
-
-.experience__section__title{
+.experience__section__title {
     text-align: center;
     font-weight: bold;
-    color:blue;
+    color: blue;
     font-size: 24px;
     padding-top: 5px;
+    margin-bottom: 20px; /* Añade espacio debajo del título */
 }
 
+/* Flexbox para la experiencia */
+.experience__box {
+    display: flex;
+    align-items: center; /* Alinea los items verticalmente al centro */
+    justify-content: space-between; /* Distribuye el espacio entre los items */
+    margin-bottom: 40px; /* Añade espacio entre cada box de experiencia */
+}
+
+.experience__box:nth-child(even) .experience__info {
+    order: 2; /* Cambia el orden de flexbox */
+}
+
+.experience__box:nth-child(even) .experience__img {
+    margin-left: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.experience__img {
+    width: 50%; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    max-width: 100%;
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.experience__info {
+    display: flex;
+    flex-direction: column; /* Invierte el orden de los elementos en columna */
+    justify-content: center; /* Centra verticalmente el contenido */
+    width: 50%; /* Ocupa el 50% del espacio para el contenido de información */
+    align-items: center;
+}
+
+.experience__description {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los botones se ajusten en líneas separadas si es necesario */
+    gap: 10px; /* Espacio entre los elementos */
+    margin-top: 10px; /* Ajusta según sea necesario */
+    justify-content: center; /* Centra horizontalmente los botones */
+    align-items: center; /* Centra verticalmente los botones */
+}
+
+.experience__boton--repo,
+.experience__boton--demo {
+    padding: 10px 20px;
+    background-color: #007BFF; /* Color de fondo inicial */
+    color: #FFF; /* Color del texto */
+    text-align: center;
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Transición suave de 0.3 segundos */
+}
+
+.experience__boton--repo:hover,
+.experience__boton--demo:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el ratón */
+    transform: scale(1.1); /* Aumenta el tamaño en un 10% */
+}
